@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+    </head>
+
+    <body>
+        <h1>My Family Book</h1>
+        <img src="https://cdn.shopify.com/s/files/1/0173/8676/products/family_book.jpg?v=1460001178" style="width:30%" id="family_member_image">
+       <h4 id="family_member_name"></h4>
+       <button onclick="update()">Next</button>
+       
+       <script>
+
+var images=["https://cdn.shopify.com/s/files/1/0173/8676/products/family_book.jpg?v=1460001178","file:///C:/Users/Sarvambh%20Singh/Downloads/Visual%20Studio%20projects/C-78%20project/me.jpg","file:///D:/Acer%20Backup%20D%20Drive/photos%2029/IMG_0563.JPG","file:///D:/Acer%20Backup%20D%20Drive/Haridwar/IMG_0011.JPG","file:///C:/Users/Sarvambh%20Singh/Downloads/kanha.jpeg","file:///C:/Users/Sarvambh%20Singh/Downloads/aunt.jpeg","file:///C:/Users/Sarvambh%20Singh/Downloads/pari.jpeg","file:///C:/Users/Sarvambh%20Singh/Downloads/chachu.jpeg","file:///C:/Users/Sarvambh%20Singh/Downloads/dadu.jpeg","file:///C:/Users/Sarvambh%20Singh/Downloads/nanu.jpeg","file:///C:/Users/Sarvambh%20Singh/Downloads/dadaji.jpg","file:///C:/Users/Sarvambh%20Singh/Downloads/dadi.jpg"];
+var names=["My Family Book","Sarvambh Singh |Me|","Nivedita Singh |My Mom|","Santosh Singh |MY DAD|","RUDRANSH SINGH |MY BROTHER|","SONIKA SINGH |MY AUNT|","ALANKRITA SINGH |MY SISTER|","ASHOK SINGH |MY UNCLE|","DILIP BOSE |MY GRANDFATHER|","JHARNA BOSE |MY GRANDMOTHER|","|MY GRANDFATHER|","PADMA SINGH |MY GRANDMOTHER|"];
+
+var i=0;
+function update()
+{
+    i++;
+    var number_of_family_members=11
+    if(i > number_of_family_members)
+    {
+        i=0;
+    }
+    var updated_image=images[i];
+    var updatedname=names[i];
+    document.getElementById("family_member_image").src = updated_image;
+    document.getElementById("family_member_name").innerHTML=updatedname;
+}
+
+       </script>
+    </body>
+</html>
