@@ -1,0 +1,19 @@
+body{
+    background-color:cadetblue;
+    color:darkmagenta;
+    font-size:medium;
+    font-style:normal;
+    font-family:Verdana, Tahoma, sans-serif;
+    font-weight:600;
+    border-radius:50px;
+    border-style:double;
+    border-color:olive;
+    border-width:3px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style:solid;
+}
+button{
+    background-color:royalblue;
+    color:yellowgreen;
+}
